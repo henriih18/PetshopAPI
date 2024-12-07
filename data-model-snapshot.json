@@ -1,0 +1,660 @@
+{
+  "snapshot": {
+    "created": "2024-12-07T12:43:10.107",
+    "database": {
+      "productVersion": "2024.3",
+      "shortName": "intellijPsiClass",
+      "majorVersion": "0",
+      "minorVersion": "0",
+      "user": "riyo",
+      "productName": "IDEA Data Grid Snapshot",
+      "url": "jpab?generationContext=e4ada55b-7619-4cac-8903-65ff2dcbd91f"
+    },
+    "metadata": {
+      "generationContext": {
+        "dbmsType": "mysql"
+      }
+    },
+    "objects": {
+      "liquibase.structure.core.Catalog": [
+        {
+          "catalog": {
+            "default": true,
+            "name": "JPA_BUDDY",
+            "snapshotId": "16db100"
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.Column": [
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "apellido",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#16db109",
+            "snapshotId": "16db113",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "apellido",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#16db102",
+            "snapshotId": "16db106",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "correo_electronico",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#16db109",
+            "snapshotId": "16db114",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "descripcion",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#16db132",
+            "snapshotId": "16db138",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "direccion",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#16db109",
+            "snapshotId": "16db116",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "edad",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#16db118",
+            "snapshotId": "16db123",
+            "type": {
+              "typeName": "INT"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "especialidad",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#16db102",
+            "snapshotId": "16db107",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "especie",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#16db118",
+            "snapshotId": "16db122",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "fecha",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#16db132",
+            "snapshotId": "16db137",
+            "type": {
+              "typeName": "DATE"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "fecha_registro",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#16db118",
+            "snapshotId": "16db128",
+            "type": {
+              "typeName": "DATE"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "genero",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#16db118",
+            "snapshotId": "16db124",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "autoIncrementInformation": {
+              "incrementBy": "1!{java.math.BigInteger}",
+              "startWith": "1!{java.math.BigInteger}"
+            },
+            "certainDataType": false,
+            "name": "id",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#16db132",
+            "snapshotId": "16db134",
+            "type": {
+              "typeName": "INT"
+            }
+          }
+        },
+        {
+          "column": {
+            "autoIncrementInformation": {
+              "incrementBy": "1!{java.math.BigInteger}",
+              "startWith": "1!{java.math.BigInteger}"
+            },
+            "certainDataType": false,
+            "name": "id",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#16db118",
+            "snapshotId": "16db120",
+            "type": {
+              "typeName": "INT"
+            }
+          }
+        },
+        {
+          "column": {
+            "autoIncrementInformation": {
+              "incrementBy": "1!{java.math.BigInteger}",
+              "startWith": "1!{java.math.BigInteger}"
+            },
+            "certainDataType": false,
+            "name": "id",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#16db109",
+            "snapshotId": "16db111",
+            "type": {
+              "typeName": "INT"
+            }
+          }
+        },
+        {
+          "column": {
+            "autoIncrementInformation": {
+              "incrementBy": "1!{java.math.BigInteger}",
+              "startWith": "1!{java.math.BigInteger}"
+            },
+            "certainDataType": false,
+            "name": "id",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#16db102",
+            "snapshotId": "16db104",
+            "type": {
+              "typeName": "INT"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "mascota_id",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#16db132",
+            "snapshotId": "16db135",
+            "type": {
+              "typeName": "INT"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "nombre",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#16db118",
+            "snapshotId": "16db121",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "nombre",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#16db109",
+            "snapshotId": "16db112",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "nombre",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#16db102",
+            "snapshotId": "16db105",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "propietario_id",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#16db118",
+            "snapshotId": "16db126",
+            "type": {
+              "typeName": "INT"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "raza",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#16db118",
+            "snapshotId": "16db125",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "telefono",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#16db109",
+            "snapshotId": "16db115",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "veterinario_id",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#16db132",
+            "snapshotId": "16db136",
+            "type": {
+              "typeName": "INT"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "veterinario_id",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#16db118",
+            "snapshotId": "16db127",
+            "type": {
+              "typeName": "INT"
+            }
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.ForeignKey": [
+        {
+          "foreignKey": {
+            "foreignKeyColumns": [
+              "liquibase.structure.core.Column#16db135"
+            ]
+            ,
+            "foreignKeyTable": "liquibase.structure.core.Table#16db132",
+            "name": "FK_CONSULTA_ON_MASCOTA",
+            "primaryKeyColumns": [
+              "liquibase.structure.core.Column#16db120"
+            ]
+            ,
+            "primaryKeyTable": "liquibase.structure.core.Table#16db118",
+            "snapshotId": "16db139"
+          }
+        },
+        {
+          "foreignKey": {
+            "foreignKeyColumns": [
+              "liquibase.structure.core.Column#16db136"
+            ]
+            ,
+            "foreignKeyTable": "liquibase.structure.core.Table#16db132",
+            "name": "FK_CONSULTA_ON_VETERINARIO",
+            "primaryKeyColumns": [
+              "liquibase.structure.core.Column#16db104"
+            ]
+            ,
+            "primaryKeyTable": "liquibase.structure.core.Table#16db102",
+            "snapshotId": "16db140"
+          }
+        },
+        {
+          "foreignKey": {
+            "foreignKeyColumns": [
+              "liquibase.structure.core.Column#16db126"
+            ]
+            ,
+            "foreignKeyTable": "liquibase.structure.core.Table#16db118",
+            "name": "FK_MASCOTA_ON_PROPIETARIO",
+            "primaryKeyColumns": [
+              "liquibase.structure.core.Column#16db111"
+            ]
+            ,
+            "primaryKeyTable": "liquibase.structure.core.Table#16db109",
+            "snapshotId": "16db129"
+          }
+        },
+        {
+          "foreignKey": {
+            "foreignKeyColumns": [
+              "liquibase.structure.core.Column#16db127"
+            ]
+            ,
+            "foreignKeyTable": "liquibase.structure.core.Table#16db118",
+            "name": "FK_MASCOTA_ON_VETERINARIO",
+            "primaryKeyColumns": [
+              "liquibase.structure.core.Column#16db104"
+            ]
+            ,
+            "primaryKeyTable": "liquibase.structure.core.Table#16db102",
+            "snapshotId": "16db130"
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.Index": [
+        {
+          "index": {
+            "columns": [
+              {
+                "column": {
+                  "name": "id"
+                }
+              }
+            ]
+            ,
+            "name": "IX_pk_consulta",
+            "snapshotId": "16db133",
+            "table": "liquibase.structure.core.Table#16db132",
+            "unique": true
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              {
+                "column": {
+                  "name": "id"
+                }
+              }
+            ]
+            ,
+            "name": "IX_pk_mascota",
+            "snapshotId": "16db119",
+            "table": "liquibase.structure.core.Table#16db118",
+            "unique": true
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              {
+                "column": {
+                  "name": "id"
+                }
+              }
+            ]
+            ,
+            "name": "IX_pk_propietario",
+            "snapshotId": "16db110",
+            "table": "liquibase.structure.core.Table#16db109",
+            "unique": true
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              {
+                "column": {
+                  "name": "id"
+                }
+              }
+            ]
+            ,
+            "name": "IX_pk_veterinario",
+            "snapshotId": "16db103",
+            "table": "liquibase.structure.core.Table#16db102",
+            "unique": true
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.PrimaryKey": [
+        {
+          "primaryKey": {
+            "backingIndex": "liquibase.structure.core.Index#16db133",
+            "columns": [
+              "liquibase.structure.core.Column#16db134"
+            ]
+            ,
+            "name": "pk_consulta",
+            "snapshotId": "16db141",
+            "table": "liquibase.structure.core.Table#16db132"
+          }
+        },
+        {
+          "primaryKey": {
+            "backingIndex": "liquibase.structure.core.Index#16db119",
+            "columns": [
+              "liquibase.structure.core.Column#16db120"
+            ]
+            ,
+            "name": "pk_mascota",
+            "snapshotId": "16db131",
+            "table": "liquibase.structure.core.Table#16db118"
+          }
+        },
+        {
+          "primaryKey": {
+            "backingIndex": "liquibase.structure.core.Index#16db110",
+            "columns": [
+              "liquibase.structure.core.Column#16db111"
+            ]
+            ,
+            "name": "pk_propietario",
+            "snapshotId": "16db117",
+            "table": "liquibase.structure.core.Table#16db109"
+          }
+        },
+        {
+          "primaryKey": {
+            "backingIndex": "liquibase.structure.core.Index#16db103",
+            "columns": [
+              "liquibase.structure.core.Column#16db104"
+            ]
+            ,
+            "name": "pk_veterinario",
+            "snapshotId": "16db108",
+            "table": "liquibase.structure.core.Table#16db102"
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.Schema": [
+        {
+          "schema": {
+            "catalog": "liquibase.structure.core.Catalog#16db100",
+            "default": true,
+            "snapshotId": "16db101"
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.Table": [
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#16db134",
+              "liquibase.structure.core.Column#16db135",
+              "liquibase.structure.core.Column#16db136",
+              "liquibase.structure.core.Column#16db137",
+              "liquibase.structure.core.Column#16db138"
+            ]
+            ,
+            "indexes": [
+              "liquibase.structure.core.Index#16db133"
+            ]
+            ,
+            "name": "consulta",
+            "outgoingForeignKeys": [
+              "liquibase.structure.core.ForeignKey#16db139",
+              "liquibase.structure.core.ForeignKey#16db140"
+            ]
+            ,
+            "primaryKey": "liquibase.structure.core.PrimaryKey#16db141",
+            "schema": "liquibase.structure.core.Schema#16db101",
+            "snapshotId": "16db132"
+          }
+        },
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#16db120",
+              "liquibase.structure.core.Column#16db121",
+              "liquibase.structure.core.Column#16db122",
+              "liquibase.structure.core.Column#16db123",
+              "liquibase.structure.core.Column#16db124",
+              "liquibase.structure.core.Column#16db125",
+              "liquibase.structure.core.Column#16db126",
+              "liquibase.structure.core.Column#16db127",
+              "liquibase.structure.core.Column#16db128"
+            ]
+            ,
+            "indexes": [
+              "liquibase.structure.core.Index#16db119"
+            ]
+            ,
+            "name": "mascota",
+            "outgoingForeignKeys": [
+              "liquibase.structure.core.ForeignKey#16db129",
+              "liquibase.structure.core.ForeignKey#16db130"
+            ]
+            ,
+            "primaryKey": "liquibase.structure.core.PrimaryKey#16db131",
+            "schema": "liquibase.structure.core.Schema#16db101",
+            "snapshotId": "16db118"
+          }
+        },
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#16db111",
+              "liquibase.structure.core.Column#16db112",
+              "liquibase.structure.core.Column#16db113",
+              "liquibase.structure.core.Column#16db114",
+              "liquibase.structure.core.Column#16db115",
+              "liquibase.structure.core.Column#16db116"
+            ]
+            ,
+            "indexes": [
+              "liquibase.structure.core.Index#16db110"
+            ]
+            ,
+            "name": "propietario",
+            "primaryKey": "liquibase.structure.core.PrimaryKey#16db117",
+            "schema": "liquibase.structure.core.Schema#16db101",
+            "snapshotId": "16db109"
+          }
+        },
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#16db104",
+              "liquibase.structure.core.Column#16db105",
+              "liquibase.structure.core.Column#16db106",
+              "liquibase.structure.core.Column#16db107"
+            ]
+            ,
+            "indexes": [
+              "liquibase.structure.core.Index#16db103"
+            ]
+            ,
+            "name": "veterinario",
+            "primaryKey": "liquibase.structure.core.PrimaryKey#16db108",
+            "schema": "liquibase.structure.core.Schema#16db101",
+            "snapshotId": "16db102"
+          }
+        }
+      ]
+      
+    },
+    "snapshotControl": {
+      "snapshotControl": {
+        "includedType": [
+          "liquibase.structure.core.Catalog",
+          "liquibase.structure.core.Column",
+          "liquibase.structure.core.ForeignKey",
+          "liquibase.structure.core.Index",
+          "liquibase.structure.core.PrimaryKey",
+          "liquibase.structure.core.Schema",
+          "liquibase.structure.core.Sequence",
+          "liquibase.structure.core.Table",
+          "liquibase.structure.core.UniqueConstraint",
+          "liquibase.structure.core.View"
+        ]
+        
+      }
+    }
+  }
+}
