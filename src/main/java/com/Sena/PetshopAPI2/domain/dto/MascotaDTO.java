@@ -1,21 +1,27 @@
 package com.Sena.PetshopAPI2.domain.dto;
 
+import java.time.LocalDate;
+
 public class MascotaDTO {
 
-    private int id;
+    private Integer idMascota; // Cambiado a Integer para ser consistente con la entidad
     private String nombre;
     private String especie;
     private int edad;
     private String genero;
     private String raza;
-    private Long propietarioId;
+    private Integer idPropietario; // ID del propietario
+    private Integer idVeterinario; // ID del veterinario
+    private LocalDate fechaRegistro;
 
-    public int getId() {
-        return id;
+    // Getters y Setters
+
+    public Integer getIdMascota() {
+        return idMascota;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdMascota(Integer idMascota) {
+        this.idMascota = idMascota;
     }
 
     public String getNombre() {
@@ -58,12 +64,27 @@ public class MascotaDTO {
         this.raza = raza;
     }
 
-    public Long getPropietarioId() {
-        return propietarioId;
+    public Integer getIdPropietario() {
+        return idPropietario;
     }
 
-    public void setPropietarioId(Long propietarioId) {
-        this.propietarioId = propietarioId;
+    public void setIdPropietario(Integer idPropietario) {
+        this.idPropietario = idPropietario;
+    }
+
+    public Integer getIdVeterinario() {
+        return idVeterinario;
+    }
+
+    public void setIdVeterinario(Integer idVeterinario) {
+        this.idVeterinario = idVeterinario;
+    }
+
+    public LocalDate getFechaRegistro() {
+        return fechaRegistro;
+    }
+
+    public void setFechaRegistro(LocalDate fechaRegistro) {
+        this.fechaRegistro = fechaRegistro;
     }
 }
-

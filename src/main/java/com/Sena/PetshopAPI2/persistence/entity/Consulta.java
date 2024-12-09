@@ -8,41 +8,28 @@ public class Consulta {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @Column(name = "id")
+    private Integer idConsulta;
 
     @ManyToOne
-    @JoinColumn(name = "mascota_id", nullable = false)
+    @JoinColumn(name = "idMascota", referencedColumnName = "id", nullable = false, insertable = false, updatable = false)
     private Mascota mascota;
 
     @ManyToOne
-    @JoinColumn(name = "veterinario_id", nullable = false)  // Aquí mapeamos la columna veterinario_id
+    @JoinColumn(name = "idVeterinario", referencedColumnName = "id", nullable = false, insertable = false, updatable = false)
     private Veterinario veterinario;
 
     private LocalDate fecha;
     private String descripcion;
 
-    public int getId() {
-        return id;
+    // Getters y Setters
+
+    public Integer getIdConsulta() {
+        return idConsulta;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public LocalDate getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(LocalDate fecha) {
-        this.fecha = fecha;
+    public void setIdConsulta(Integer idConsulta) {
+        this.idConsulta = idConsulta;
     }
 
     public Mascota getMascota() {
@@ -53,17 +40,27 @@ public class Consulta {
         this.mascota = mascota;
     }
 
-    public void setMascotaId(int mascotaId) {
-    }
-
-    public void setVeterinarioId(int veterinarioId) {
-    }
-
     public Veterinario getVeterinario() {
         return veterinario;
     }
 
     public void setVeterinario(Veterinario veterinario) {
         this.veterinario = veterinario;
+    }
+
+    public LocalDate getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(LocalDate fecha) {
+        this.fecha = fecha;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 }

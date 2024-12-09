@@ -1,11 +1,11 @@
 package com.Sena.PetshopAPI2.domain.repository;
 
+import com.Sena.PetshopAPI2.persistence.crud.ConsultaCrudRepository;
 import com.Sena.PetshopAPI2.persistence.entity.Consulta;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.List;
 
-public interface ConsultaRepository extends JpaRepository<Consulta, Integer> {
-    List<Consulta> findByMascota_Id(int mascotaId);
-    List<Consulta> findByVeterinario_Id(int veterinarioId);
+@Repository
+public interface ConsultaRepository extends ConsultaCrudRepository <Consulta, Integer> {
+
 }

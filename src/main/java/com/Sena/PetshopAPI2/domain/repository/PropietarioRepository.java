@@ -1,8 +1,9 @@
 package com.Sena.PetshopAPI2.domain.repository;
 
-import com.Sena.PetshopAPI2.persistence.entity.Propietario;
-import org.springframework.data.jpa.repository.JpaRepository;
+import com.Sena.PetshopAPI2.persistence.crud.PropietarioCrudRepository;
+import org.springframework.stereotype.Repository;
 
-public interface PropietarioRepository extends JpaRepository<Propietario, Integer> {
+@Repository
+public interface PropietarioRepository extends PropietarioCrudRepository {
 
 }

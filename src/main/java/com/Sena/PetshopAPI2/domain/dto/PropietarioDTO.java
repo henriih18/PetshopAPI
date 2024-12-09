@@ -1,20 +1,23 @@
 package com.Sena.PetshopAPI2.domain.dto;
 
-public class PropietarioDTO {
+import java.util.List;
 
-    private int id;
+public class PropietarioDTO {
+    private Integer idPropietario;
     private String nombre;
     private String apellido;
     private String correoElectronico;
-    private String telefono;
     private String direccion;
+    private String telefono;
+    private List<MascotaDTO> mascotas; // Relación con MascotaDTO
 
-    public int getId() {
-        return id;
+    // Getters y Setters
+    public Integer getIdPropietario() {
+        return idPropietario;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdPropietario(Integer idPropietario) {
+        this.idPropietario = idPropietario;
     }
 
     public String getNombre() {
@@ -41,6 +44,14 @@ public class PropietarioDTO {
         this.correoElectronico = correoElectronico;
     }
 
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
     public String getTelefono() {
         return telefono;
     }
@@ -49,12 +60,11 @@ public class PropietarioDTO {
         this.telefono = telefono;
     }
 
-    public String getDireccion() {
-        return direccion;
+    public List<MascotaDTO> getMascotas() {
+        return mascotas;
     }
 
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
+    public void setMascotas(List<MascotaDTO> mascotas) {
+        this.mascotas = mascotas;
     }
 }
-

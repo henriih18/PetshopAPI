@@ -4,27 +4,34 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
+@Table(name = "propietario")
 public class Propietario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @Column(name = "id")
+    private Integer idPropietario;
 
     private String nombre;
     private String apellido;
+
+    @Column(name = "correo_electronico")
     private String correoElectronico;
-    private String telefono;
     private String direccion;
+    private String telefono;
 
     @OneToMany(mappedBy = "propietario")
     private List<Mascota> mascotas;
 
-    public int getId() {
-        return id;
+    // Getters y Setters
+
+
+    public Integer getIdPropietario() {
+        return idPropietario;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdPropietario(Integer idPropietario) {
+        this.idPropietario = idPropietario;
     }
 
     public String getNombre() {
@@ -51,20 +58,20 @@ public class Propietario {
         this.correoElectronico = correoElectronico;
     }
 
-    public String getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
     public String getDireccion() {
         return direccion;
     }
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
     public List<Mascota> getMascotas() {

@@ -1,10 +1,9 @@
 package com.Sena.PetshopAPI2.domain.repository;
 
-import com.Sena.PetshopAPI2.persistence.entity.Mascota;
-import org.springframework.data.jpa.repository.JpaRepository;
+import com.Sena.PetshopAPI2.persistence.crud.MascotaCrudRepository;
+import org.springframework.stereotype.Repository;
 
-public interface MascotaRepository extends JpaRepository<Mascota, Integer> {
-
-
+@Repository
+public interface MascotaRepository extends MascotaCrudRepository {
 
 }

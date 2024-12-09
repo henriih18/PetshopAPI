@@ -1,36 +1,43 @@
 package com.Sena.PetshopAPI2.persistence.entity;
 
 import jakarta.persistence.*;
+
 import java.time.LocalDate;
 
 @Entity
+@Table(name = "mascota")
 public class Mascota {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @Column(name = "id")
+    private Integer idMascota;  // Usamos Integer en lugar de int
+
     private String nombre;
     private String especie;
     private int edad;
     private String genero;
     private String raza;
 
+    @Column(name = "fecha_registro")
+    private LocalDate fechaRegistro;
+
     @ManyToOne
-    @JoinColumn(name = "propietario_id", nullable = false)
+    @JoinColumn(name = "idPropietario", referencedColumnName = "id", nullable = false)
     private Propietario propietario;
 
     @ManyToOne
-    @JoinColumn(name = "veterinario_id", nullable = false)
+    @JoinColumn(name = "idVeterinario", referencedColumnName = "id", nullable = false)
     private Veterinario veterinario;
 
-    private LocalDate fechaRegistro;
 
-    public int getId() {
-        return id;
+    // Getters y Setters
+    public Integer getIdMascota() {
+        return idMascota;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdMascota(Integer idMascota) {
+        this.idMascota = idMascota;
     }
 
     public String getNombre() {

@@ -1,8 +1,10 @@
 package com.Sena.PetshopAPI2.domain.repository;
 
 import com.Sena.PetshopAPI2.persistence.entity.Veterinario;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import com.Sena.PetshopAPI2.persistence.crud.VeterinarioCrudRepository;
 
-public interface VeterinarioRepository extends JpaRepository<Veterinario, Integer> {
+@Repository
+public interface VeterinarioRepository extends VeterinarioCrudRepository<Veterinario, Integer> {
 
 }

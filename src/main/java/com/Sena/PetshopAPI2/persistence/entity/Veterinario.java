@@ -4,33 +4,37 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
+@Table(name = "veterinario")
 public class Veterinario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @Column(name = "id")
+    private Integer idVeterinario;
 
     private String nombre;
     private String apellido;
     private String especialidad;
 
+    // Relación OneToMany con Consulta
     @OneToMany(mappedBy = "veterinario")
-    private List<Mascota> mascotas;
+    private List<Consulta> consultas;
 
-    public int getId() {
-        return id;
+    // Getters y Setters
+    public Integer getIdVeterinario() {
+        return idVeterinario;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdVeterinario(Integer idVeterinario) {
+        this.idVeterinario = idVeterinario;
     }
 
-    public List<Mascota> getMascotas() {
-        return mascotas;
+    public List<Consulta> getConsultas() {
+        return consultas;
     }
 
-    public void setMascotas(List<Mascota> mascotas) {
-        this.mascotas = mascotas;
+    public void setConsultas(List<Consulta> consultas) {
+        this.consultas = consultas;
     }
 
     public String getEspecialidad() {
@@ -56,4 +60,5 @@ public class Veterinario {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
 }

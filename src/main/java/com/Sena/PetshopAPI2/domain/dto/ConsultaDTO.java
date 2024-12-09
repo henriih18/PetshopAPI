@@ -4,35 +4,35 @@ import java.time.LocalDate;
 
 public class ConsultaDTO {
 
-    private int id;
-    private int mascotaId;
-    private int veterinarioId;
-    private LocalDate fecha;
+    private Integer idConsulta;
+    private Integer idMascota;
+    private Integer idVeterinario;
+    private LocalDate fecha = LocalDate.now(); // Fecha actual por defecto
     private String descripcion;
 
-    // Getters y setters
-    public int getId() {
-        return id;
+    // Getters y Setters
+    public Integer getIdConsulta() {
+        return idConsulta;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdConsulta(Integer idConsulta) {
+        this.idConsulta = idConsulta;
     }
 
-    public int getMascotaId() {
-        return mascotaId;
+    public Integer getIdMascota() {
+        return idMascota;
     }
 
-    public void setMascotaId(int mascotaId) {
-        this.mascotaId = mascotaId;
+    public void setIdMascota(Integer idMascota) {
+        this.idMascota = idMascota;
     }
 
-    public int getVeterinarioId() {
-        return veterinarioId;
+    public Integer getIdVeterinario() {
+        return idVeterinario;
     }
 
-    public void setVeterinarioId(int veterinarioId) {
-        this.veterinarioId = veterinarioId;
+    public void setIdVeterinario(Integer idVeterinario) {
+        this.idVeterinario = idVeterinario;
     }
 
     public LocalDate getFecha() {
